@@ -10,5 +10,5 @@
       "visibility": "private"
     }
   },
-  "postStartCommand": "bash .devcontainer/start-jupyter.sh > /tmp/jupyterlab.log 2>&1 &"
+  "postStartCommand": "bash .devcontainer/start-jupyter.sh"
 }
