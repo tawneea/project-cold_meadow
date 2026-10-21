@@ -1,6 +1,8 @@
 {
   "name": "Python JupyterLab Codespace",
-  "forwardPorts": [8890],
+  "forwardPorts": [
+    8890
+  ],
   "portsAttributes": {
     "8890": {
       "label": "JupyterLab",
@@ -8,5 +10,5 @@
       "visibility": "private"
     }
   },
-  "postStartCommand": "bash .devcontainer/start-jupyter.sh"
+  "postStartCommand": "bash .devcontainer/start-jupyter.sh > /tmp/jupyterlab.log 2>&1 &"
 }
